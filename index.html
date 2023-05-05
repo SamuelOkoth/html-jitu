@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Types and Attributes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <h1 style="text-align: center;">Form Input Types and Attributes</h1>
+        <!-- input type text and also the maxlength and minlegth -->
+        <label for="text-input">Enter your name:</label>
+        <input type="text" id="text-input" placeholder="Enter your name here" pattern="[a-zA-Z]+" minlength="2" maxlength="10" required><br>
+
+        <!-- input type email -->
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br>
+
+        <!-- input type password, min and max length -->
+        <label for="password-input">Password Input:</label>
+        <input type="password" id="password-input" minlength="8" required><br>
+
+        <!-- input type number and also the minimum and maximum length attribute -->
+        <label for="number-input">Year of study</label>
+        <input type="number" id="number-input" min="1" max="4" required><br>
+
+        <!-- Date input -->
+        <label for="date-input">Graduation date</label>
+        <input type="date" id="date-input" required><br>
+
+        <!-- Time input -->
+        <label for="time-input">Time Input:</label>
+        <input type="time" id="time-input" required><br>
+
+        <!-- input type url --> 
+        <label for="url-input">Url to Your Github</label>
+        <input type="url" id="url-input" required><br>
+
+        <label for="url-input">Url to Your Linkedin</label>
+        <input type="url" id="url-input" required><br>
+
+        <label for="file-input">Upload Your Pic</label>
+        <input type="file" id="file-input" multiple><br>
+
+        <h4>Choose your Course</h4>
+        <input type="radio" id="course1" name="course" value="computer">
+        <label for="course1">Computer Science</label><br>
+        <input type="radio" id="course2" name="course" value="swe">
+        <label for="course2">Software Engineering</label><br>
+        <input type="radio" id="course3" name="course" value="infotech">
+        <label for="course3">Information Technology</label><br>
+        <input type="radio" id="course4" name="course" value="csys">
+        <label for="course4">Computer Sysytems</label><br><br>
+
+        <!-- checkbox input and checked attribute -->
+        <h4>Languages</h4>
+        <label for="checkbox-input">Javascript</label>
+        <input type="checkbox" id="checkbox-input" checked><br>
+
+        <label for="checkbox-input">Python</label>
+        <input type="checkbox" id="checkbox-input"><br>
+
+        <label for="checkbox-input">C#</label>
+        <input type="checkbox" id="checkbox-input"><br>
+
+        <!-- input type="search" is used for search fields -->
+        <label for="gsearch">Search Others:</label>
+        <input type="search" id="gsearch" name="gsearch">
+        <input type="submit" value="Search"><br><br>
+
+        <label for="select-input">Experience Level</label>
+        <select id="select-input" required>
+            <option value="">Choose 1</option>
+            <option value="option1">Beginner</option>
+            <option value="option2">Intermediate</option>
+            <option value="option3">Advanced</option>
+            <option value="option4">Proffesional</option>
+        </select><br><br>
+
+        <!-- range -->
+        <label for="vol">Working Hours (between 0 and 24):</label>
+        <input type="range" id="vol" name="vol" min="0" max="24"><br><br>
+    
+        <!-- radio input, required and checked attribute -->
+        <h4>Frameworks and Libraries</h4>
+        <label for="radio-input1">React Js</label>
+        <input type="radio" id="radio-input1" name="radio-group" value="radio1" required checked><br>
+
+        <label for="radio-input2">Django</label>
+        <input type="radio" id="radio-input2" name="radio-group" value="radio2" required><br>
+
+        <label for="radio-input3">Node Js</label>
+        <input type="radio" id="radio-input3" name="radio-group" value="radio3" required><br>
+
+        <label for="radio-input4">Angular</label>
+        <input type="radio" id="radio-input4" name="radio-group" value="radio4" required><br>
+    
+        <label for="textarea-input">Leave your comment here :</label>
+        <textarea id="textarea-input" rows="4" cols="50" minlength="10" required></textarea><br><br>
+
+        <!-- type button -->
+        <input type="button" onclick="alert('Hello World!')" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
